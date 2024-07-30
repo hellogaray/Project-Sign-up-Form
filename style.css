@@ -1,0 +1,52 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Global variables */
+:root {
+    /* Color Palette */
+    --color-primary-text: rgb(59, 61, 65);
+    --color-secondary-text: rgb(160, 165, 172);
+    --color-border-light: rgba(225, 228, 232, 0.8);
+
+    /* Font Stack */
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-inter: "Inter", sans-serif;
+}
+
+/* Base styles */
+body {
+    font-family: var(--font-sans);
+    color: var(--color-primary-text);
+    font-size: 0.9rem;
+}
+
+/* Link styles */
+a {
+    text-decoration: none;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.4;
+}
+
+input {
+    padding: 0.5rem;
+    border: none;
+    border-bottom: solid 0.1rem var(--color-secondary-text);
+    margin-bottom: 1rem;
+    background-color: var(--color-border-light);
+}
+
+label {
+    padding-bottom: .5rem;
+}
+
+form {
+    padding: 3rem;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
